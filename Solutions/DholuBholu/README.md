@@ -25,3 +25,4 @@ To solve this problem, we came up with an idea of making an application which ca
 Integration of health and technology can make our lives easier and safer. This is one of the steps towards that integration. MedHub can ensure the trust between the doctor and the patient even before the appointment as the users are allowed to rate them! Now get your treatment done from the best ones in your area!!
 Thank You!
 </strong>
+<h3><a href = "https://www.figma.com/file/KpuYxlb075QCq9RQYv1hVX/EHospital?node-id=0%3A1"> View UI design in Figma </a></h3>
