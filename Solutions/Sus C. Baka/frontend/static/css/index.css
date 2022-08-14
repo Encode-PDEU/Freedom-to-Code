@@ -1,0 +1,159 @@
+
+body {
+    --nav-width: 200px;
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background: #211165;
+}
+
+.nav__link {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    background: rgba(102, 248, 165, 0.077);
+}
+
+#app {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+a {
+    color: #009579;
+}
+
+#logo {
+    float:center;
+    width: 100px;
+    display: block;
+}
+
+form {
+    width: 50%;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+#checklist {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border-color: #27f231;
+    border-width: 3px;
+    display: block;
+}
+#theButton {
+    white-space: pre;
+    float:bottom;
+    width:100px;
+    border-radius: 5px;
+    background-color: #1dd1aa;
+    line-height: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+#popup {
+    border-radius: 2px;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+#submit-button{
+    border-radius: 2px;
+    width: 307px;
+    height: 30px;
+    background-color: orange;
+    margin-bottom: 30px;
+}
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+#map {
+    height: 500px;
+    width: 500px;
+}
+#upload-button{
+    border-radius: 2px;
+    width: 307px;
+    height: 30px;
+    background-color: rgb(105, 7, 254);
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  #upload{
+    border-radius: 2px;
+    width: 307px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+#mapview {
+    height: 600px;
+    margin-bottom: 60px;
+    float:left;
+}
+    .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+#select_location{
+    border-radius: 2px;
+    width: 307px;
+    height: 30px;
+    background-color: rgb(105, 7, 254);
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
