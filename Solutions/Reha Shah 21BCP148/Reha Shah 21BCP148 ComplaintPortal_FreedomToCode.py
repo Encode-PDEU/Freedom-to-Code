@@ -689,7 +689,7 @@ while k and l:
                                                     z2=0
                                                     fno=''
                                                 elif 695<cur[0]<845 and 540<cur[1]<595:
-                                                    co.execute("update feedback set status='seen'")
+                                                    co.execute("update feedback set status='seen' where f_no=%s",tfno)
                                                     mo.commit()
                                                     z2=0
                                                     fno=''
