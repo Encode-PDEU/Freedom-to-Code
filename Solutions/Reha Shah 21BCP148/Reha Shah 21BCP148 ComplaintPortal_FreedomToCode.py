@@ -264,10 +264,10 @@ while k and l:
                                 z1=0
                                 
                             elif 1065<cur[0]<1150 and 120<cur[1]<165:
-                                co.execute("select c_no from complaint_log where logged_by_u_no=%s order by c_no",(data[0],))
-                                lcno=co.fetchmany(10)
-                                tcno=(int(cno),)
-                                if cno.isdigit():
+                                if cno.isdigit() and len(cno)>0:
+                                    co.execute("select c_no from complaint_log where logged_by_u_no=%s order by c_no",(data[0],))
+                                    lcno=co.fetchmany(10)
+                                    tcno=(int(cno),)
                                     if tcno in lcno:
                                         #individual complaint details page
                                         co.execute('select * from complaint_log where c_no=%s',tcno)
@@ -546,10 +546,10 @@ while k and l:
                                 z1=0
                                 
                             elif 1065<cur[0]<1150 and 120<cur[1]<165:
-                                co.execute("select c_no from complaint_log where status='unresolved' order by c_no")
-                                lcno=co.fetchmany(10)
-                                tcno=(int(cno),)
-                                if cno.isdigit():
+                                if cno.isdigit() and len(cno)>0:
+                                    co.execute("select c_no from complaint_log where status='unresolved' order by c_no")
+                                    lcno=co.fetchmany(10)
+                                    tcno=(int(cno),)
                                     if tcno in lcno:
                                         #individual complaint viewing page
                                         z2=1
