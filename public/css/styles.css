@@ -1,0 +1,46 @@
+body{
+    padding-bottom: 2rem;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.cbutton button{
+    margin: 5vh 10vw;
+    margin-bottom: 5vh;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.cbutton button:nth-child(1){
+    background-color: #FF9933!important;
+    border-color: #f68d24;
+}
+.cbutton button:nth-child(2){
+    background-color :#138808!important;;
+    border-color: #0d6c04;
+}
+.mount{
+    max-width: 800px; 
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem 0;
+}
+.NewComplaint{
+    
+    background-color: rgba(255, 166, 0, 0.226);
+}
+.ComplaintStatus{
+    background-color: #a2ea9b87;
+}
+.mount form{
+    width: 75%;
+    margin: 0 auto;
+    
+}
+.mount form input,textarea,select{
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+.mount h2{
+    margin: 2rem;
+}
