@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page App</title>
+    <link rel="stylesheet" href="/static/css/index.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/" class="nav__link" data-link
+        ><img src="/static/assets/logo.png" id="logo" onclick="homePage()"
+      /></a>
+      <a href="/" class="nav__link" data-link>HomePage</a>
+      <a href="/submit" class="nav__link" data-link>Submit a Complaint</a>
+      <a href="/about" class="nav__link" data-link>About Us</a>
+    </nav>
+    <div id="app"></div>
+    <script type="module" src="/static/js/index.js"></script>
+    <script>
+      var hidden = true;
+      var hidden2 = true;
+      var uploadbutton = true;
+      var mapviewshow = true;
+      var selectlocation = true;
+
+      function clickMe() {
+        var text = document.getElementById("popup");
+        text.classList.toggle("hide");
+        text.classList.toggle("show");
+        hidden = !hidden;
+        if (hidden) {
+          document.getElementById("submit-button").hidden = true;
+        } else {
+          document.getElementById("submit-button").hidden = false;
+        }
+      }
+      function showUpload() {
+        hidden2 = !hidden2;
+        if (hidden2) {
+          document.getElementById("upload").hidden = true;
+        } else {
+          document.getElementById("upload").hidden = false;
+        }
+      }
+      function showUploadButton() {
+        uploadbutton = !uploadbutton;
+        if (uploadbutton) {
+          document.getElementById("upload-button").hidden = true;
+        } else {
+          document.getElementById("upload-button").hidden = false;
+        }
+      }
+      function mapViewShow() {
+        mapviewshow = !mapviewshow;
+        if (mapviewshow) {
+          document.getElementById("mapview").hidden = true;
+        } else {
+          document.getElementById("mapview").hidden = false;
+        }
+      }
+      function selectLocationShow() {
+        selectlocation = !selectlocation;
+        if (selectlocation) {
+          document.getElementById("select_location").hidden = true;
+        } else {
+          document.getElementById("select_location").hidden = false;
+        }
+      }
+    </script>
+  </body>
+</html>
